@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="ContactUs.css">
+</head>
+
+<body>
+  <header>
+    <img id="mainLogo"src="assets/Switch Mode=NO.png" alt="">
+    <nav>
+      <a href="/" class="active">Home</a>
+      <a href="/#Service">Service</a>
+      <a href="/#Feature">Feature</a>
+      <a href="/#Product">Product</a>
+      <a href="/#Testimonial">Testimonial</a>
+      <a href="">FAQ</a>
+      <a href="/ContactUs.html">Contact Us</a>
+    </nav>
+    <div id="loginAndSignUp">
+      <button id="loginBtn" class="loadingBtn">Login
+        <img class="loadingIcon" src="assets/Loading.png" alt="Loading...">
+      </button>
+      <button id="signUpBtn" class="loadingBtn">
+        <span>Sign Up</span>
+        <img class="loadingIcon" src="assets/Loading.png" alt="Loading...">
+      </button>
+    </div>
+  </header>
+  <h1 id="heading">Contact Us</h1>
+  <main>
+    <section class="contact-container">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions or need further information, feel free to reach out to us using the form below.</p>
+        <ul>
+          <li><strong>Address:</strong> 1234 Street Name, City, Country</li>
+          <li><strong>Email:</strong> contact@example.com</li>
+          <li><strong>Phone:</strong> +123 456 7890</li>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <form >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footerContent">
+      <div id="footerLogo">
+        <img id="footerLogoImg" src="assets/Switch Mode=YES.png" alt="">
+        <p id="copyright">Copyright © 2024 Riglabs Collective</p>
+        <p id="rights">All rights reserved.</p>
+        <div id="footerSocial">
+          <img src="assets/Social Icons (1).png" alt="Instagrsm">
+          <img src="assets/Social Icons (2).png" alt="social">
+          <img src="assets/Social Icons (3).png" alt="Twitter">
+          <img src="assets/Social Icons (4).png" alt="YouTube">
+        </div>
+      </div>
+      <div id="Company">
+        <h4 id="head9">Company</h4>
+        <a href="">About Us</a>
+        <a href="">Blog</a>
+        <a href="">Contact us</a>
+        <a href="">Pricing</a>
+        <a href="">Testimonials</a>
+      </div>
+      <div id="Support">
+        <h4 id="head9">Support</h4>
+        <a href="">Help center</a>
+        <a href="">Terms of service</a>
+        <a href="">Legal</a>
+        <a href="">Privacy policy</a>
+        <a href="">Status</a>
+      </div>
+      <div id="footerMail">
+        <h4 id="head10">Stay up to date</h4>
+        <form action="" autocomplete="on">
+          <input type="mail" name="mail" placeholder="Your email address">
+          <button id="submit" type="submit">
+            <img src="assets/send.png" alt="send">
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

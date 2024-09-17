@@ -437,6 +437,7 @@ h3{
   color: #263238;
   margin-bottom: 2rem;
 }
+
 #footerContent{
   height: 50vh;
   display: flex;
@@ -495,7 +496,7 @@ h3{
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
-input{
+#footerMail input{
   background-color: #6a737c;
   border: .01px solid #6a737c;
   border-radius: 6px;
@@ -503,10 +504,10 @@ input{
   font-size: 0.875rem;
   padding:  0.563rem 0.75rem;
 }
-input::placeholder{
+#footerMail input::placeholder{
   color: #D9DBE1;
 }
-input:focus{
+#footerMail input:focus{
   border-color: none;
 }
 #submit{
@@ -517,7 +518,7 @@ input:focus{
   color: #D9DBE1;
   padding: 0.4rem 0.75rem;
 }
-form{
+#footerMail form{
   display: flex;
   flex-direction: row;
 }
@@ -575,7 +576,7 @@ form{
 /*Media Queries*/
 @media screen and (min-width: 767px) and (max-width: 1025px) { /* For landscape mode tablets (larger tablets) */
   #mainLogo {
-    max-width: 8rem;
+    max-width: 7rem;
     margin: 0;
     margin-left: 0.5rem;
   }
@@ -798,10 +799,10 @@ form{
       margin-top: -8rem;
     }
   
-    input {
+  #footerMail input {
       max-width: 80%;
     }
-    form{
+  #footerMail form{
       margin: 0;
     }
 }
