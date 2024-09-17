@@ -125,7 +125,7 @@ header nav a:hover{
   background-color: #388E3B;
   border-color: #388E3B;
 }
-#Home{
+#firstContent{
   width: 100vw;
   height: calc(100vh - 6rem);
   margin-top:6rem;
@@ -198,7 +198,7 @@ header nav a:hover{
   color: #4D4D4D;
   margin-bottom: 0;
 }
-#clientsIcon{
+.clientsIcon{
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -206,7 +206,7 @@ header nav a:hover{
   margin: 1rem 0 2.5rem 0;
   padding: 0 6.5rem;
 }
-#Icon{
+.Icon,.Icon2{
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -224,7 +224,7 @@ h3{
   gap: 1.5rem;
   max-width: 71rem;
 }
-#Customer{
+.Customer{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,7 +248,7 @@ h3{
   align-items: center;
   box-sizing: border-box;
 }
-#content3{
+#content3,#content5{
   max-width: 37.563rem;
   margin-left: 3rem;
 }
@@ -378,7 +378,7 @@ h3{
   line-height: 1.5;
   margin-bottom: 1rem;
 }
-#container{
+.container{
   width: 29rem;
   height: 17.875rem;
   object-fit: contain;
@@ -520,4 +520,288 @@ input:focus{
 form{
   display: flex;
   flex-direction: row;
+}
+
+
+/*Animations*/
+.js-scroll{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+.animate{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.Icon:nth-child(2){
+  transition-delay:  500ms;
+}
+.Icon:nth-child(3){
+  transition-delay:  1000ms;
+}
+.Icon:nth-child(4){
+  transition-delay:  1500ms;
+}
+.Icon:nth-child(5){
+  transition-delay: 2000ms;
+}
+.Icon:nth-child(6){
+  transition-delay:  2500ms;
+}
+.Icon:nth-child(7){
+  transition-delay:  3000ms;
+}
+
+
+.Customer:nth-child(2){
+  transition-delay:  400ms;
+}
+.Customer:nth-child(3){
+  transition-delay: 800ms;
+}
+
+
+.container:nth-child(2){
+  transition-delay:  400ms;
+}
+.container:nth-child(3){
+  transition-delay:  800ms;
+}
+
+
+/*Media Queries*/
+@media screen and (min-width: 767px) and (max-width: 1025px) { /* For landscape mode tablets (larger tablets) */
+  #mainLogo {
+    max-width: 8rem;
+    margin: 0;
+    margin-left: 0.5rem;
+  }
+  header {
+    width: 100%;
+    height: 4.6rem;
+    z-index: 1000;
+    padding: 0.25rem 0.0625rem;
+    gap: 0;
+    }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 300;
+  }
+
+  header nav .active {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  header nav a {
+    font-size: 0.99rem;
+    margin: 0 .563rem;
+  }
+  #loginBtn,
+  #readMoreBtn,
+  #signUpBtn,
+  #registerBtn,
+  #learnMoreBtn,
+  #demoBtm {
+    padding: 0.5rem 1rem;
+    font-size: 0.99rem;
+  }
+  #signUpBtn{
+    margin-right: 0.55rem;
+  }
+  #firstContent{
+    height: calc(80vh - 4.6rem);
+    margin-top: 4.6rem;
+  }
+  #firstContentText{
+    padding: 0 3.5rem 0 1rem;
+  }
+  #textAndImage{
+    margin-right: 4rem;
+  }
+  #heroIllustrationImg{
+    width: 25.625rem;
+  }
+  #registerBtn{
+    margin-top: 1.5rem;
+  }
+  #secondContent{
+    height: 80vh;
+  }
+  #secondContentImg{
+    max-width: 80%;
+  }
+  #head2{
+    font-size: 2rem;
+  }
+  #head3{
+    font-size: 2rem;
+  }
+  #head4{
+    font-size: 100%;
+  }
+  .clientsIcon{
+    margin: 1rem 0 2rem 0;
+    padding: 0 4.5rem;
+  }
+  .Icon{
+    max-width: 100%;
+  }
+  h3{
+    font-size: 1.75rem;
+  }
+  #prevCust{
+    gap: 1.2rem;
+    max-width: 45rem;
+  }
+  #info,#info2{
+    font-size: 1.1rem;
+  }
+  #thirdContent , #fifthContent,#sixthContent{
+    height: 80vh;
+  }
+    #thirdContent{
+    flex-direction: column;
+  }
+  #Feature1{
+    width: 90%;
+  }
+  #content3{
+    max-width: 38.563rem;
+    margin-left: 0;
+  }
+  #subProp{
+    font-size: 1.3rem;
+  }
+  #fourthContent{
+    height: 50vh;
+  }
+  #PropText{
+    margin-left: 1rem;
+    }
+  #Prop1, #Prop2{
+    font-size: 2.3rem;
+  }
+  #statisticsImg{
+    width: 2.5rem;
+  }
+  #statisticsCalc{
+    font-size: 1.3rem;
+  }
+  #Prop3{
+    font-size: 0.95rem;
+  }
+  #fourItems{
+    gap: 3rem;
+  }
+  #subProp2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  #statistics{
+    gap: 1rem;
+  }
+  #head5{
+    font-size: 2.3rem;
+  }
+  #subProp3{
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  .subProp3{
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  #fifthContent{
+    flex-direction: column;
+  }
+  #Feature2{
+    max-width: 90%;
+  }
+  #sixthContent{
+    gap: 1rem;
+  }
+  #sixthContentText{
+    max-width: 46rem;
+  }
+  #subProp4{
+    max-width: 23rem;
+  }
+  #clientsIcon2 {
+    max-width: 70%;
+    gap: 0;
+  }
+  #seventhContent{
+    height: 70vh;
+  }
+  #card{
+    width: 12.25rem;
+  }
+  #head7{
+    font-size: 1.1rem;
+  }
+  .Icon2{
+    max-width: 2rem;
+  }
+  #subProp4, #subProp5{
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+  .container{
+    max-width: 14rem;
+    width: 100%;
+  }
+    #footerContent {
+      height: 30vh;
+      justify-content: space-around;
+      margin-left:-1.4rem;
+    }
+  
+    #footerContent a {
+      font-size: 0.775rem;
+      font-weight: 150;
+      margin-left: -1.5rem;
+    }
+  
+    #copyright,
+    #rights {
+      font-size: 0.775rem;
+      font-weight: 200;
+    }
+  
+    #head9 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-left:-1.5rem;
+    }
+  
+    #Company,
+    #Support {
+      gap: 1rem;
+    }
+  
+    #footerSocial {
+      gap: 1rem;
+    }
+  
+    #footerLogoImg {
+      width: 10rem;
+    }
+  
+    #footerMail {
+      margin-top: -8rem;
+    }
+  
+    input {
+      max-width: 80%;
+    }
+    form{
+      margin: 0;
+    }
 }

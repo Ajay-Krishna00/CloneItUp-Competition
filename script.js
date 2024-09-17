@@ -1,14 +1,5 @@
-// const button = document.getElementById("signUpBtn");
-
-// button.addEventListener('click', function () {   // event listener for the button click
-//   button.classList.add("loading");
-//   setTimeout(function () {
-//     button.classList.remove("loading");
-//   }, 2000);
-// });
-
-// Get all the buttons with the class 'loadingBtn'
-const buttons = document.querySelectorAll('.loadingBtn');
+//Loading Button
+const buttons = document.querySelectorAll('.loadingBtn');// Get all the buttons with the class 'loadingBtn'
 buttons.forEach(button => {
   button.addEventListener('click', function() {
     button.classList.add('loading');
@@ -18,6 +9,7 @@ buttons.forEach(button => {
   });
 });
 
+//Sticky Header
 const header = document.querySelector("header");
 const sticky = header.offsetTop;
 function makeSticky() {
@@ -32,3 +24,17 @@ function makeSticky() {
 window.onscroll = () => {
   makeSticky();
 };
+
+//Animations
+const scrollElements = document.querySelectorAll(".js-scroll");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+    }
+    else {
+      entry.target.classList.remove("animate");
+    }
+  })
+});
+scrollElements.forEach((el) => observer.observe(el));
