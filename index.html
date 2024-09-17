@@ -10,25 +10,32 @@
   <header>
     <h1 id="mainLogo"><img src="assets/Switch Mode=NO.png" alt=""></h1>
     <nav>
-      <a href="">Home</a>
-      <a href="">Service</a>
-      <a href="">Feature</a>
-      <a href="">Product</a>
-      <a href="">Testimonial</a>
-      <a href="">FAQ</a>
+      <a href="#Home" class="active">Home</a>
+      <a href="#Service">Service</a>
+      <a href="#Feature">Feature</a>
+      <a href="#Product">Product</a>
+      <a href="#Testimonial">Testimonial</a>
+      <a href="/">FAQ</a>
     </nav>
     <div id="loginAndSignUp">
-      <button id="loginBtn">Login</button>
-      <button id="signUpBtn">Sign Up</button>
+      <button id="loginBtn" class="loadingBtn">Login
+        <img class="loadingIcon" src="assets/Loading.png" alt="Loading...">
+      </button>
+      <button id="signUpBtn" class="loadingBtn">
+        <span>Sign Up</span>
+        <img class="loadingIcon" src="assets/Loading.png" alt="Loading...">
+      </button>
     </div>
   </header>
-  <section id="firstContent">
+  <section id="Home">
       <div id="textAndImage">
         <div id="firstContentText">
           <p id="LessonsProp">Lessons and insights</p>
           <p id="fromProp">from 8 years</p>
           <p id="subProp">Where to grow your business as a photographer: site or social media?</p>
-          <button id="registerBtn">Register</button>
+          <button id="registerBtn" class="loadingBtn">Register
+            <img class="loadingIcon" src="assets/Loading.png" alt="Loading...">
+          </button>
         </div>
         <div id="heroIllustration">
           <img id="heroIllustrationImg" src="assets/Hero Illustration.png" alt="Hero_Illustration">
@@ -41,6 +48,7 @@
   <section id="secondContent">
       <h2 id="head2">Our Clients</h2>
       <p id="subProp">We have been working with some Fortune 500+ clients</p>
+      <div id="Service"></div>
       <div id="clientsIcon">
         <img id="Icon" src="assets/Logo.png" alt="">
         <img id="Icon" src="assets/Logo (1).png" alt="">
@@ -53,21 +61,228 @@
       <h2 id="head3">Manage your entire community</h2>
       <h2 id="head2">in a single system</h2>
       <p id="subProp">Who is Nextcent suitable for?</p>
-      <div>
-        <div>
+      <div id="prevCust">
+        <div id="Customer">
+          <img id="logo" src="assets/Icon (3).png" alt="">
           <h3>Membership Organizations</h3>
-          <div>Our membership management software provides full automation of membership renewals and payments</div>
+          <p id="info">Our membership management software provides full automation of membership renewals and payments</p>
         </div>
-        <div>
+        <div id="Customer">
+          <img id="logo" src="assets/Icon (1).png" alt="">
           <h3>National Associations</h3>
-          <div>Our membership management software provides full automation of membership renewals and payments</div>
+          <p id="info">Our membership management software provides full automation of membership renewals and payments</p>
         </div>
-        <div>
+        <div id="Customer">
+          <img id="logo" src="assets/Icon (2).png" alt="">
           <h3>Clubs And Groups</h3>
-          <div>Our membership management software provides full automation of membership renewals and payments</div>
+          <p id="info">Our membership management software provides full automation of membership renewals and payments</p>
         </div>
       </div>
   </section>
+
+  <section>
+    <div id="thirdContent">
+      <div>
+        <img id="Feature1" src="assets/Feature 1 Illustration.png" alt="Feature 1">
+      </div>
+      <div id="content3">
+        <h2 id="head3">The unseen of spending three years at Pixelgrade</h2>
+        <p id="subProp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam
+          vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam
+          pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum
+          pulvinar odio.</p>
+          <div id="Feature"></div>
+        <button id="learnMoreBtn" class="loadingBtn">Learn More
+          <img class="loadingIcon" src="assets/Loading.png" alt="Loading...">
+        </button>
+      </div>
+    </div>
+    </section>
+  <section >
+    <div id="fourthContent">
+      <div id="PropText">
+        <h2 id="Prop1">Helping a local</h2>
+        <h2 id="Prop2">business reinvent itself</h2>
+        <p id="Prop3">We reached here with our hard work and dedication</p>
+      </div>
+      <div id="fourItems">
+        <div id="first2Items">
+          <div id="statistics">
+            <div><img src="assets/Users.png" alt="Users"></div>
+            <div>
+              <h3>2,245,341</h3>
+              <p id="subProp2">Members</p>
+            </div>
+          </div>
+          <div id="statistics">
+            <div><img src="assets/Calendar.png" alt="Calendar"></div>
+            <div>
+              <h3>828,867</h3>
+              <p id="subProp2">Event Bookings</p>
+            </div>
+          </div>
+        </div>
+        <div id="second2Items">
+          <div id="statistics">
+            <div><img src="assets/Layers.png" alt="Layers"></div>
+            <div>
+              <h3>46,328</h3>
+              <p id="subProp2">Clubs</p>
+            </div>
+          </div>
+          <div id="statistics">
+            <div><img src="assets/Logout.png" alt="Logout"></div>
+            <div>
+              <h3>1,926,436</h3>
+              <p id="subProp2">Payments</p>
+            </div>
+          </div>
+        </div>
+        <div id="Product"></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="fifthContent">
+      <div>
+        <img id="Feature2" src="assets/Feature 2 Illustration.png" alt="Feature 1">
+      </div>
+      <div id="content3">
+        <h2 id="head5">How to design your site footer like we did</h2>
+        <p id="subProp3">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu,
+        at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus
+        vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt.
+        Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit
+        venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+        <button id="learnMoreBtn" class="loadingBtn">Learn More
+          <img class="loadingIcon" src="assets/Loading.png" alt="Loading...">
+        </button>
+        <div id="Testimonial"></div>
+      </div>
+    </div>
+    
+  </section>
+  <section >
+    <div id="sixthContent">
+      <img id="sixthContentImg" src="assets/Image.png" alt="">
+      <div id="sixthContentText">
+        <p id="subProp4">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper.
+        Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit
+        elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis
+        tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada
+        enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id.
+        Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+        <h4 id="author">Tim Smith</h4>
+        <p id="subProp5">British Dragon Boat Racing Association</p>
+        <div id="IconAndMore">
+          <div id="clientsIcon2">
+            <img id="Icon" src="assets/Logo (6).png" alt="">
+            <img id="Icon" src="assets/Logo (1).png" alt="">
+            <img id="Icon" src="assets/Logo (2).png" alt="">
+            <img id="Icon" src="assets/Logo (3).png" alt="">
+            <img id="Icon" src="assets/Logo (4).png" alt="">
+            <img id="Icon" src="assets/Logo (5).png" alt="">
+          </div>
+          <h4 id="more">Meet all customers</h4>
+          <img src="assets/Right.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="seventhContent">
+      <h2 id="head6">Caring is the new marketing</h2>
+      <span id="info2">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the
+      community, read about how our community are increasing their membership income and lot's more.​</span>
+      <div id="threePoints">
+        <div id="container">
+          <div id="points">
+            <img id="image" src="assets/image 18.png" alt="image">
+            <div id="card">
+              <h4 id="head7">Creating Streamlined Safeguarding Processes with OneRen</h4>
+              <button id="readMoreBtn">
+                <span>Read more</span>
+                <img src="assets/Right.png" alt="Right">
+              </button>
+            </div>
+        </div>
+        </div>
+        <div id="container">
+          <div id="points">
+            <img id="image" src="assets/image 19.png" alt="image">
+            <div id="card">
+              <h4 id="head7">What are your safeguarding responsibilities and how can you manage them?</h4>
+              <button id="readMoreBtn">
+                <span>Read more</span>
+                <img src="assets/Right.png" alt="Right">
+            </div>
+            </button>
+          </div>
+        </div>
+        <div id="container">
+          <div id="points">
+            <img id="image" src="assets/image 20.png" alt="image">
+            <div id="card">
+              <h4 id="head7">Revamping the Membership Model with Triathlon Australia</h4>
+              <button id="readMoreBtn">
+                <span>Read more</span>
+                <img src="assets/Right.png" alt="Right">
+            </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="eighthContent">
+      <h1 id="head8">Wanna try our app?</h1>
+      <button id="demoBtm">
+        <span>Get a demo</span>
+        <img src="assets/Right1.png" alt="Right">
+      </button>
+    </div>
+  </section>
+  <footer>
+    <div id="footerContent">
+      <div id="footerLogo">
+        <img id="footerLogoImg"src="assets/Switch Mode=YES.png" alt="">
+        <p id="copyright">Copyright © 2024 Riglabs Collective</p>
+        <p id="rights">All rights reserved.</p>
+        <div id="footerSocial">
+          <img src="assets/Social Icons (1).png" alt="Instagrsm">
+          <img src="assets/Social Icons (2).png" alt="social">
+          <img src="assets/Social Icons (3).png" alt="Twitter">
+          <img src="assets/Social Icons (4).png" alt="YouTube">
+        </div>
+      </div>
+        <div id="Company">
+          <h4 id="head9">Company</h4>
+          <a href="">About Us</a>
+          <a href="">Blog</a>
+          <a href="">Contact us</a>
+          <a href="">Pricing</a>
+          <a href="">Testimonials</a>
+        </div>
+        <div id="Support">
+          <h4 id="head9">Support</h4>
+          <a href="">Help center</a>
+          <a href="">Terms of service</a>
+          <a href="">Legal</a>
+          <a href="">Privacy policy</a>
+          <a href="">Status</a>
+        </div>
+        <div id="footerMail">
+          <h4 id="head10">Stay up to date</h4>
+          <form action="" autocomplete="on">
+            <input type="mail" name="mail" placeholder="Your email address">
+            <button id="submit" type="submit">
+              <img src="assets/send.png" alt="send">
+            </button>
+          </form>
+        </div>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
